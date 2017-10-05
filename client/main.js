@@ -21,6 +21,6 @@ Template.emailSubmission.events({
     Meteor.call(
       'sendEmail', // function to call
       'hamaad.markhiani@gmail.com', // email address the message will be sent to (change this to text box input later)
-      'emailString'); // text of the actual email (change this to text box input later)
+      'Proof that some email is senttttt'); // text of the actual email (change this to text box input later)
   },
 });
