@@ -24,3 +24,18 @@ Template.emailSubmission.events({
       'Proof that some email is senttttt'); // text of the actual email (change this to text box input later)
   },
 });
+
+Template.loginPage.events({
+  'click login'(event, instance) {
+    Meteor.loginWithGoogle({
+      requestPermissions: [],
+      loginStyle: 'popup'
+    }, function(err) {
+       if(err) {
+         // TODO: show error page
+       } else {
+         Router.go('home');
+       }
+    })
+  },
+});
